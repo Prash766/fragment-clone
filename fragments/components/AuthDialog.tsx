@@ -1,7 +1,6 @@
 import { AuthViewType } from "@/lib/auth"
 import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog"
 import AuthForm from "./AuthForm"
-import { supabase } from "@/lib/supabase"
 import { DialogHeader } from "./ui/dialog"
 import { SupabaseClient } from "@supabase/supabase-js"
 
@@ -12,7 +11,7 @@ const AuthDialog = ({
     view
 }:{
     open : boolean
-    supbase : SupabaseClient
+    supabase : SupabaseClient
     setOpen : (value :boolean)=> void
     view : AuthViewType
 
